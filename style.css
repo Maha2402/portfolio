@@ -1,0 +1,227 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+
+} /*it porvide space for the content*/
+html{
+    scroll-behavior: smooth;
+}
+.navbar{/* anda content varum centre la place agum suthi gray background eruku*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgba(0, 0, 0, 0.5);
+    position:sticky;
+    top:0;
+
+}
+.navbar ul{ /*center erukura items horizontal varaduku use agum*/
+    display:flex;
+    list-style:none;
+    margin:20px 0px;
+}
+.navbar ul li{
+    font-family:'Times New Roman', Times, serif;
+    font-size:1.3em;
+    font-weight:bold;
+}
+.navbar ul li a{
+    text-decoration:none;
+    color:white;
+    padding:8px 25px;
+    transition: all .5s ease;
+
+}
+.navbar ul li a:hover{/*adha click pana white ah varum*/
+    background-color:white;
+    color:black;
+    box-shadow:0 0 10 white;
+    
+
+
+}
+#home{
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height:930px;
+    justify-content: center;
+    align-items: center;
+    color:white;
+
+}
+#home::before{
+    content:" ";
+    position:absolute;/*only image should be shown*/
+    top:0;
+    right:0;
+    background:url("vf.jpg") no-repeat center center/cover;
+    height:993px;
+    width:100%;
+    z-index:-1;/*inorder to dull background image*/
+    opacity: 1;/*evlo thooram therya vaikanum kaga*/
+
+}
+.main{
+    display:flex;
+    flex-direction: column;/*oru oru word column varaduku*/
+    /*border:1px solid white;*/
+    align-items: center;/*hire me center la place agum*/
+    position:absolute;
+    top:40%;
+    right:30%;
+}
+.heading{
+    font-family:'century';
+    font-size:2.3rem;
+    text-align:center;
+    margin:25px 0px;
+}
+
+.btn{
+    font-weight:bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:10px 35px;
+    background-color:transparent;
+    border:1px solid white;
+    color:white;
+    transition:6s ease;
+
+}
+.btn:hover{/*designing button while clicking*/
+    cursor:pointer;
+    background-color: white;
+    color:black;
+    box-shadow:0 0 2px white, 0 0 10px white,0 0 15px white;
+}
+#about{
+    height: 910px;
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding:20px;
+    margin-bottom:150px;
+    background-color: beige;
+}
+#pic{
+    display:flex;
+}
+#pic img{
+  width:900px;
+  height:500px;
+}
+#intro{
+    display:flex;
+    flex-direction: column;
+    text-align:justify;
+    padding:10px;
+}
+#intro h2 {
+    font-size:2rem;
+    margin-bottom:20px;/*gap between my name and paragraph*/
+}
+/*portfolio section*/
+#portfolio{
+    display:flex;
+    flex-direction:column;
+    background-color:black;
+    color:white;
+    padding:20px;
+}
+.gallery{
+    display:flex;
+    flex-wrap:wrap;/*image equal vaikum kela kela*/
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{/*image naduvula ula gap height weight*/
+    width:360px;
+    height:300px;
+    margin:58px;
+}
+/*services*/
+#hlo{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#services{
+    height:930px;
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+    background-color:beige
+   
+}
+.row{
+    display:flex;
+    justify-content: space-around; /* space vitu row wise ah align panum*/
+    flex-wrap:wrap;
+    box-sizing:border-box;
+    padding-top: 90px;
+    
+}
+.box{/*box la website design box vaikuraduku*/
+    display:flex;
+    flex-direction: column;
+    width:350px;
+    height:450px;
+    border:1px solid black;
+    margin:10px;
+    align-items: center;
+    text-align:justify;
+    padding:10px;
+    border-radius:15px; /*corner curved ah varaduku*/
+    background:linear-gradient(to top,rgb(41, 67, 180) 50%,white 50%);
+    background-size:100% 200%;
+    transition: all .8s;
+}
+.box:hover{/*anda box click pana colour marum*/
+    background-position:left bottom;
+    color:white;
+    border:none;
+    box-shadow:0 0 40px rgb(41, 67, 180);
+}
+/*contact section*/
+#contact{
+    height:930px;
+    display:flex;
+    flex-direction:column;
+    box-sizing: border-box;
+  
+    color:white;
+    padding: 20px;
+    background-color:black;
+}
+.form{
+    display:flex;/*it will form a box structure*/
+    flex-direction: column;/*align everything in column*/
+    box-sizing: border-box;
+    align-items:center;
+    margin:20px 0px;
+}
+.input{
+    padding: 12px;
+    margin:15px;
+    width:30%;
+    border:none;
+    outline:none;
+
+}
+#msg{
+    width:20%;
+    padding:10px;
+    margin:15px;
+    border:none;
+    outline:none;
+}
+#send{
+    padding:10px;
+    width:10%;
+    margin:40px;
+    border:none;
+}
+
+
+
